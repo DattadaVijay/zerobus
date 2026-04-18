@@ -3,12 +3,16 @@ resources:
     Zerobus_job:
       name: Zerobus_job
 
+      permissions:
+        - user_name: dattada.vijay@gmail.com
+          level: CAN_MANAGE
+
       environments:
         - environment_key: default
           spec:
             environment_version: "2"
             dependencies:
-              - databricks-zerobus
+              - databricks-zerobus-ingest-sdk
 
       tasks:
         - task_key: run_producer
