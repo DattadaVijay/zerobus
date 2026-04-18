@@ -8,7 +8,7 @@ resources:
       tasks:
         - task_key: test_task
           notebook_task:
-            notebook_path: ../src/app.py
+            notebook_path: ../src/producer.py
 
       environments:
         - environment_key: default
