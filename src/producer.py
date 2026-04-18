@@ -1,4 +1,10 @@
 # Databricks notebook source
+
+%pip install databricks-zerobus
+dbutils.library.restartPython()
+
+# COMMAND ----------
+
 import json, uuid, time, random, os
 from datetime import datetime, timezone
 from zerobus.sdk.sync import ZerobusSdk
