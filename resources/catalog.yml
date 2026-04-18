@@ -4,23 +4,3 @@ resources:
       name: zerobus
       catalog_name: dltvijay
       comment: "Schema for Zerobus ingestion practice"
-
-  tables:
-    sensor_readings:
-      name: sensor_readings
-      catalog_name: dltvijay
-      schema_name: zerobus
-      comment: "Dummy sensor readings via Zerobus"
-      columns:
-        - name: event_id
-          type_text: STRING
-        - name: sensor_id
-          type_text: STRING
-        - name: temperature
-          type_text: DOUBLE
-        - name: pressure
-          type_text: DOUBLE
-        - name: status
-          type_text: STRING
-        - name: event_time
-          type_text: TIMESTAMP
