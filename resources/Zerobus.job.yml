@@ -1,0 +1,16 @@
+# The main job for Zerobus.
+resources:
+  jobs:
+    Zerobus_job:
+      name: Zerobus_job
+
+
+      tasks:
+        - task_key: test_task
+          notebook_task:
+            notebook_path: ../src/app.py
+
+      environments:
+        - environment_key: default
+          spec:
+            environment_version: "2"
