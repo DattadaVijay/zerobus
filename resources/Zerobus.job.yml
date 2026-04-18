@@ -4,23 +4,7 @@ resources:
       name: Zerobus_job
 
       tasks:
-        - task_key: setup_table
-          sql_task:
-            warehouse_id: ece081f3bd7cb8a7
-            query:
-              query: |
-                CREATE TABLE IF NOT EXISTS dltvijay.zerobus.sensor_readings (
-                  event_id    STRING,
-                  sensor_id   STRING,
-                  temperature DOUBLE,
-                  pressure    DOUBLE,
-                  status      STRING,
-                  event_time  TIMESTAMP
-                )
-
         - task_key: run_producer
-          depends_on:
-            - task_key: setup_table
           notebook_task:
             notebook_path: ../src/producer.py
           libraries:

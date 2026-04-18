@@ -1,6 +1,0 @@
-resources:
-  schemas:
-    zerobus_schema:
-      name: zerobus
-      catalog_name: dltvijay
-      comment: "Schema for Zerobus ingestion practice"
